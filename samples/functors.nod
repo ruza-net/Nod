@@ -1,0 +1,67 @@
+infix right (<-): Assignment
+infix left (>=>): Assignment
+
+
+// -= Functors =-
+
+protocol Functor<T> {
+    pub func (<-) <U>(T -> U, self) -> Self<U>
+}
+
+
+enum Optional<T>: Functor<T> {
+    case None, Some(T)
+
+    pub func (<-) <U>(fn: T -> U, self) -> Optional<U> {
+        match (self) {
+            case .None:
+                return .None
+
+            case .Some(let val):
+                return .Some(fn(val))
+        }
+    }
+}
+
+
+let a = Optional.Some(2)
+let b = Optional<i64>.None
+
+{ $0 + 1 } <- a     // .Some(3)
+{ $0 + 1 } <- b     // .None
+
+
+// -= Monads =-
+
+protocol Monad<T> {
+    pub func (>>=) <U>(self, T -> Self<U>) -> Self<U>
+    pub static func wrap(T) -> Self<T>
+}
+
+func (>=>) <T, U, V>(f: T -> Monad<U>, g: U -> Monad<V>) -> Monad<V> {
+    return { f($0) >>= g }
+}
+
+extend Optional<T>: Monad<T> {
+    pub func (>>=) <U>(self, fn: T -> Optional<U>) -> Optional<U> {
+        match (self) {
+            case .None:
+                return Optional<U>.None     // [TODO] We'll see if compiler would be smart enough to make
+                                            // [TODO] it possible to contract this to `.None`...
+
+            case .Some(let val):
+                return fn(val)
+        }
+    }
+
+    pub static func wrap(val: T) -> Optional<T> {
+        return .Some(val)
+    }
+}
+
+
+func half(a: i64) -> i64? {
+    return a / 2 ? a % 2 == 0 : nil
+}
+
+a >>= half

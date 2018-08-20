@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.cpp
+Lexer.h
+/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.h
+
+/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.h
+map
+-
+stack
+-
+vector
+-
+string
+-
+iostream
+-
+Token.h
+/Users/honzatemp/CLionProjects/NodParser/parse/Token.h
+
+/Users/honzatemp/CLionProjects/NodParser/parse/Token.h
+string
+-
+
