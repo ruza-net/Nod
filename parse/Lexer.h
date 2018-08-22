@@ -197,6 +197,8 @@ namespace Nod
         void eat() {
             charno++;
 
+            LexerState state = states.top();
+
             switch (buffer[++pos]) {
                 case '\n':
                     states.push(s::NewLine);
@@ -219,15 +221,14 @@ namespace Nod
                 case '7':
                 case '8':
                 case '9':
-                    if (states.top() != s::Integer && states.top() != s::Float) {
+                    if (state != s::Integer && state != s::Float) {
                         states.push(s::Integer);
                     }
 
                     break;
 
                 case '<':
-                    if(states.top() == s::DoubleDot) {
-                        states.pop();
+                    if(state == s::DoubleDot) {
                         states.push(s::BuildToken);
 
                         break;
@@ -247,18 +248,36 @@ namespace Nod
                 case '!':
                 case '?':
                 case ':':
-                    if (states.top() != s::Operator) {
-                        states.push(s::Operator);
+                    if (state != s::Operator && state != s::Dollar) {
+                        if (state != s::Default) {
+                            states.push(s::BuildToken);
+
+                            pos--;
+                            charno--;
+
+                        } else {
+                            states.push(s::Operator);
+                        }
+                    }
+
+                    break;
+
+                case '$':
+                    if (state != s::Operator && state != s::Default) {
+                        states.push(s::BuildToken);
+
+                        pos--;
+                        charno--;
                     }
 
                     break;
 
                 case '.':
-                    if (states.top() == s::Integer) {
+                    if (state == s::Integer) {
                         states.pop();
                         states.push(s::Float);
 
-                    } else if (states.top() == s::Dot) {
+                    } else if (state == s::Dot) {
                         states.pop();
                         states.push(s::DoubleDot);
 
@@ -285,6 +304,12 @@ namespace Nod
 
         void build_token() {
             size_t tok_len = pos - tok_start;
+
+            const char last = buffer[tok_len - 1];
+
+            if (last == ' ' || last == '\t' || last == '\n') {
+                tok_len -= 1;
+            }
 
             TokenType type;
             std::string val = buffer.substr(tok_start, tok_len);
@@ -317,29 +342,31 @@ namespace Nod
 
                     break;
 
-                case s::Identifier: {
-                    auto item = getKeywords().find(val);
+                case s::Identifier:// [NOTE] Must introduce a new frame for local variables.
+                    {
+                        auto item = getKeywords().find(val);
 
-                    if (item != getKeywords().end()) {
-                        type = item->second;
+                        if (item != getKeywords().end()) {
+                            type = item->second;
 
-                    } else {
-                        type = tt::Identifier;
+                        } else {
+                            type = tt::Identifier;
+                        }
                     }
-                }
 
                     break;
 
-                case s::Operator: {
-                    auto item = getOperators().find(val);
+                case s::Operator:// [NOTE] Must introduce a new frame for local variables.
+                    {
+                        auto item = getOperators().find(val);
 
-                    if (item != getOperators().end()) {
-                        type = item->second;
+                        if (item != getOperators().end()) {
+                            type = item->second;
 
-                    } else {
-                        type = tt::GeneralOperator;
+                        } else {
+                            type = tt::GeneralOperator;
+                        }
                     }
-                }
 
                     break;
 
@@ -361,7 +388,7 @@ namespace Nod
                     break;
             }
 
-            tokens.push_back(Token(type, val, lineno, charno - tok_len));
+            tokens.emplace_back(Token(type, val, lineno, charno - tok_len));
         }
 
     public:
@@ -385,7 +412,7 @@ namespace Nod
 
                     build_token();
 
-                    tok_start.push(pos);
+                    tok_start = pos;
 
                     states.pop();
 

@@ -8,93 +8,93 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug"/>
+				<Option working_dir="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug"/>
+				<Option working_dir="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug"/>
+				<Option working_dir="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NodParser">
-				<Option output="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/NodParser" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug"/>
+				<Option output="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/NodParser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 NodParser"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 NodParser"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NodParser/fast">
-				<Option output="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/NodParser" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug"/>
+				<Option output="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/NodParser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 NodParser/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 NodParser/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/honzatemp/CLionProjects/NodParser/main.cpp">
+		<Unit filename="/Users/janruzicka/Documents/CLionProjects/Nod/main.cpp">
 			<Option target="NodParser"/>
 		</Unit>
-		<Unit filename="/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.cpp">
+		<Unit filename="/Users/janruzicka/Documents/CLionProjects/Nod/parse/Lexer.cpp">
 			<Option target="NodParser"/>
 		</Unit>
-		<Unit filename="/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.h">
+		<Unit filename="/Users/janruzicka/Documents/CLionProjects/Nod/parse/Lexer.h">
 			<Option target="NodParser"/>
 		</Unit>
-		<Unit filename="/Users/honzatemp/CLionProjects/NodParser/parse/Token.h">
+		<Unit filename="/Users/janruzicka/Documents/CLionProjects/Nod/parse/Token.h">
 			<Option target="NodParser"/>
 		</Unit>
-		<Unit filename="/Users/honzatemp/CLionProjects/NodParser/CMakeLists.txt">
+		<Unit filename="/Users/janruzicka/Documents/CLionProjects/Nod/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

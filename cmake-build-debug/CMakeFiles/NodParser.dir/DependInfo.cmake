@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/honzatemp/CLionProjects/NodParser/main.cpp" "/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/CMakeFiles/NodParser.dir/main.cpp.o"
-  "/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.cpp" "/Users/honzatemp/CLionProjects/NodParser/cmake-build-debug/CMakeFiles/NodParser.dir/parse/Lexer.cpp.o"
+  "/Users/janruzicka/Documents/CLionProjects/Nod/main.cpp" "/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/CMakeFiles/NodParser.dir/main.cpp.o"
+  "/Users/janruzicka/Documents/CLionProjects/Nod/parse/Lexer.cpp" "/Users/janruzicka/Documents/CLionProjects/Nod/cmake-build-debug/CMakeFiles/NodParser.dir/parse/Lexer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

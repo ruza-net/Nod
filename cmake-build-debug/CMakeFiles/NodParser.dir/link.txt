@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/llvm/lib CMakeFiles/NodParser.dir/main.cpp.o CMakeFiles/NodParser.dir/parse/Lexer.cpp.o  -o NodParser 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/NodParser.dir/main.cpp.o CMakeFiles/NodParser.dir/parse/Lexer.cpp.o  -o NodParser 

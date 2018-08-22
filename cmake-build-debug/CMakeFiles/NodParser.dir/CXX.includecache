@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.cpp
-Lexer.h
-/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.h
+/Users/janruzicka/Documents/CLionProjects/Nod/main.cpp
+iostream
+-
 
-/Users/honzatemp/CLionProjects/NodParser/parse/Lexer.h
+/Users/janruzicka/Documents/CLionProjects/Nod/parse/Lexer.cpp
+Lexer.h
+/Users/janruzicka/Documents/CLionProjects/Nod/parse/Lexer.h
+
+/Users/janruzicka/Documents/CLionProjects/Nod/parse/Lexer.h
 map
 -
 stack
@@ -22,9 +26,9 @@ string
 iostream
 -
 Token.h
-/Users/honzatemp/CLionProjects/NodParser/parse/Token.h
+/Users/janruzicka/Documents/CLionProjects/Nod/parse/Token.h
 
-/Users/honzatemp/CLionProjects/NodParser/parse/Token.h
+/Users/janruzicka/Documents/CLionProjects/Nod/parse/Token.h
 string
 -
 
